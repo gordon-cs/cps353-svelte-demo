@@ -2,10 +2,11 @@
 
 * Created following https://svelte.dev/docs/introduction
 ```
-npm create svelte@latest myapp
+    npm create svelte@latest myapp
+    # (chose defaults, plus all 4 optoinal packages (eslint, prettier, playwright, vitest)
+    # should have done instead, to save extra directory level:
+    # npm create svelte@latest
 ```
-    * better: `npm create svelte@latest` # avoid an extra directory level
-    * Chose defaults, plus all 4 optional packages (eslint, prettier, playwright, vitest).
 
 ```
 cd myapp
