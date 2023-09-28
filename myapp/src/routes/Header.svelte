@@ -33,14 +33,22 @@
 	</svg>
     </nav>
 
-    <div class="corner">
-	<a href="https://github.com/sveltejs/kit">
-	    <img src={github} alt="GitHub" />
+    <div class="together">
+        <span class=""> Russ Tuck</span>
+        <div class="corner">
+	    <a href="https://github.com/sveltejs/kit">
+	        <img src={github} alt="GitHub" />
 	</a>
+        </div>
     </div>
 </header>
 
 <style>
+ .together {
+    display: flex;
+    align-items: center;
+ }
+
  header {
      display: flex;
      justify-content: space-between;
