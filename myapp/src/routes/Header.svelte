@@ -2,6 +2,7 @@
  import { page } from '$app/stores';
  import logo from '$lib/images/svelte-logo.svg';
  import github from '$lib/images/github.svg';
+ import User from './User.svelte';
 </script>
 
 <header>
@@ -34,7 +35,7 @@
     </nav>
 
     <div class="together">
-        <span class=""> Russ Tuck</span>
+        <User />
         <div class="corner">
 	    <a href="https://github.com/sveltejs/kit">
 	        <img src={github} alt="GitHub" />
