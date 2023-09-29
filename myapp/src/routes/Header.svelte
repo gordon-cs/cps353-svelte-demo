@@ -3,13 +3,17 @@
  import logo from '$lib/images/svelte-logo.svg';
  import github from '$lib/images/github.svg';
  import User from './User.svelte';
+ import UserBalance from './UserBalance.svelte';
 </script>
 
 <header>
-    <div class="corner">
-	<a href="https://kit.svelte.dev">
-	    <img src={logo} alt="SvelteKit" />
-	</a>
+    <div class="together">
+        <div class="corner">
+	    <a href="https://kit.svelte.dev">
+	        <img src={logo} alt="SvelteKit" />
+	    </a>
+        </div>
+        <UserBalance />
     </div>
 
     <nav>
