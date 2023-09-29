@@ -2,6 +2,7 @@
  import { username } from './user-store.js';
  let name = $username;
 
+ // Change the username store (on submit, not as type in form)
  function setUsername() {
      $username = name;
  }
