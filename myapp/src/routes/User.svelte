@@ -1,6 +1,6 @@
 <script>
  import { username } from './user-store.js';
- let name = 'Guest';
+ let name = $username;
 
  function setUsername() {
      $username = name;
