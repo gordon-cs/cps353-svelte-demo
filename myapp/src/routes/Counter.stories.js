@@ -29,7 +29,9 @@ export const CountUp = {
         // await expect(canvas.queryByDisplayValue('0')).toBeNull();
 
         // Not working like I expect.  Passes even when it shouldn't.
-        //await expect(canvas.getByText('1', {exact:false})).toBeInTheDocument();
+//        await expect(canvas.getByText('1', {exact:false})).toBeInTheDocument();
+
+        await expect(canvas.queryByText('3', {exact:false})).toBeNull();
 
         // Click + twice and see Counter at 3
         await userEvent.click(
@@ -37,6 +39,8 @@ export const CountUp = {
         await userEvent.click(
             canvas.getByLabelText('Increase the counter by one'));
         // Not working.  Don't know why.
+        //        await expect(canvas.queryByText('>3</strong>', {exact:false}))
+        //            .toBeInTheDocument();
         await expect(canvas.getByText('3', {exact:false})).toBeInTheDocument();
     },
 };
