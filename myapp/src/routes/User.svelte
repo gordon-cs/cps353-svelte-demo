@@ -8,7 +8,7 @@
  }
 </script>
 
-<form on:submit|preventDefault={() => setUsername()}>
+<form on:submit|preventDefault={setUsername}>
     <input class="username" id="newname" bind:value={name} />
 </form>
 <!-- {$username} -->
