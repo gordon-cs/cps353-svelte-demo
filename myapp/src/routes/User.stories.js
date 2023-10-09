@@ -1,4 +1,4 @@
-// Counter.stories.js
+// User.stories.js
 import User from './User.svelte';
 import { within, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';

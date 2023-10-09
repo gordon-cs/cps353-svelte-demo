@@ -3,6 +3,7 @@
  import welcome from '$lib/images/svelte-welcome.webp';
  import welcome_fallback from '$lib/images/svelte-welcome.png';
  import { username } from './user-store.js';
+ import Verse from './Verse.svelte';
 </script>
 
 <svelte:head>
@@ -27,6 +28,7 @@
     </h2>
 
     <Counter />
+    <Verse />
 </section>
 
 <style>
